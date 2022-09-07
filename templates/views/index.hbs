@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="distribute">
+    {{>navbar}}
+    <div class="cont">
+        <div class="box">
+            <div class="co_box">
+                <div class="welcome">
+                    <h2 class="wel_head">Welcome</h2>
+                    <div class="welcome_para">
+                        <p class="wel_para">to the complete MERN</p>
+                        <p class="wel_para">Backend course</p>
+                    </div>
+                </div>
+                <div class="login">
+                    <button class="login_btn">Login</button>
+                </div>
+            </div>
+            <div class="co_co_box">
+                <div class="reg_log_container">
+                    <div class="reg_log_contain">
+                        <div class="reg_log">
+                            <button id="register" class="reg_log_1" onclick="regist()">Registration</button>
+                            <button id="login" class="reg_log_2" onclick="login()">Login</button>
+                            <div id="check"></div>
+                        </div>
+                    </div>
+                    <h2 class="register_head">Employee Registration Form</h2>
+                    <form class="all_form" action="/register" method="POST">
+                        <div class="both_form">
+                            <div class="first_form">
+                                <input class="input" type="text" name="firstname" placeholder="First Name*">
+                                <input class="input" type="text" name="email" placeholder="Your Email*">
+                                <input class="input" type="tel" name="phone" placeholder="Your Phone*">
+                                <input class="input" type="password" name="password" placeholder="Password*">
+                            </div>
+                            <div class="second_form">
+                                <input class="input" type="text" name="lastname" placeholder="Last Name*">
+                                <div class="gender">
+                                    <input class="male" type="radio" name="gender" value="Male">
+                                    <label for="male">Male</label>
+                                    <input class="female" type="radio" name="gender" value="Female">
+                                    <label for="female">Female</label>
+                                </div>
+                                <input class="input" type="text" name="age" placeholder="Your Age*">
+                                <input class="input" type="password" name="confirmpassword" placeholder="ConfirmPassword*">
+                            </div>
+                        </div>
+                        <div class="final_reg">
+                            <input id="final_reg" type="submit" value="Register" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const check = document.getElementById("check");
+    value = false;
+
+    if (value === false) {
+        function login() {
+            check.classList.add("login_form");
+        }
+    }
+    function regist() {
+        check.classList.add("register_form");
+    }
+</script>
+
+</html>

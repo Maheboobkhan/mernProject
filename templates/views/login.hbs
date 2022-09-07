@@ -1,0 +1,336 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .nav_cont {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            position:
+                sticky;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 180px;
+            background:
+                url("/assets/css/mk.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            height: 100%;
+            display:
+                flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .domain_name {
+            display: flex;
+        }
+
+        .domain_heading {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .valid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heading {
+            margin-top: 50px;
+        }
+
+        .anchor {
+            color:
+                #fff;
+            margin-left: 15px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: red;
+            font-size: 40px;
+        }
+
+        .login_page {
+            display:
+                flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login_box {
+            display:
+                flex;
+            flex-direction: column;
+            align-items: center;
+            width: 240px;
+            height:
+                270px;
+            margin-top: 10px;
+            background-color: rgb(204, 202, 202);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            width: 210px;
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgb(185, 183, 183);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items:
+                center;
+            margin-top: 40px;
+        }
+
+        i {
+            font-size: 35px;
+            color: gray;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .input {
+            width: 210px;
+        }
+
+        .input[type=submit] {
+            width:
+                210px;
+            margin-top: 10px;
+            background-color: blue;
+            color: white;
+        }
+
+        p {
+            margin-left: 5px;
+        }
+
+        .need {
+            margin-left: 5px;
+            text-decoration: none;
+        }
+
+        .create {
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+
+        @media only screen and (max-width: 690px) {
+            .main-container {
+                height: 130px;
+            }
+
+            .container {
+                height:
+                    95%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .domain_heading {
+                color:
+                    #fff;
+                font-size: 30px;
+            }
+
+            .valid {
+                width: 100%;
+            }
+
+            h1 {
+                font-weight: bold;
+                color: red;
+                font-size: 15px;
+            }
+
+            .login_box {
+                display:
+                    flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 85%;
+                height:
+                    380px;
+            }
+
+            .input {
+                width: 80%;
+                padding: 5px;
+            }
+
+            .input[type=submit] {
+                width:
+                    80%;
+            }
+
+            form {
+                width: 85%;
+            }
+
+            .create {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .main-container {
+                height: 80px;
+                width: 100vw;
+            }
+
+            .container {
+                height:
+                    95%;
+                display: flex;
+            }
+
+            .domain_heading {
+                color:
+                    #fff;
+                font-size: 20px;
+            }
+
+            .valid {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            h1 {
+                font-weight: bold;
+                color: red;
+                font-size: 15px;
+            }
+
+            .login_box {
+                display:
+                    flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 85%;
+                height:
+                    380px;
+            }
+
+            .input {
+                width: 80%;
+                padding: 5px;
+            }
+
+            .input[type=submit] {
+                width:
+                    80%;
+            }
+
+            form {
+                width: 85%;
+            }
+
+            .create {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 1050px) {
+
+            .main-container {
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_cont">
+        <div class="main-container">
+            <div class="container">
+                <div class="domain_name">
+                    <h3 class="domain_heading">Mk Khan</h3>
+                </div>
+                <div id="heading">
+                    <h1>Welcome To The Mern Tutorial</h1>
+                </div>
+                <div class="valid">
+                    <a class="anchor" href="/">Home</a>
+                    <a class="anchor" href="/secret">Secret</a>
+                    <a class="anchor" href="/login">Login</a>
+                    <a class="anchor" href="/index">Registration</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="login_page">
+            <div class="heading">
+                <h3>Employee Login Form</h3>
+            </div>
+            <div class="login_box">
+                <div class="icon">
+                    <i class="fa-solid fa-user-slash"></i>
+                </div>
+                <form action="/login" method="POST">
+                    <input class="input" type="text" name="email" placeholder="Email" autocomplete="off" />
+                    <input class="input" type="password" name="password" placeholder="Password" />
+                    <input class="input" type="submit" value="Sign in" />
+                </form>
+                <div class="remember">
+                    <input type="checkbox" />
+                    <p>Remember me</p>
+                    <a class="need" href="">Need help?</a>
+                </div>
+            </div>
+            <a class="create" href="/index">Create an acount</a>
+        </div>
+    </div>
+</body>
+
+</html>

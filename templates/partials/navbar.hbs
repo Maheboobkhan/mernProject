@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<style>
+    @media screen and (min-width: 640px) and (max-width: 1024px) {
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .domain_name {
+            width: 200px;
+            border: 1px solid white;
+        }
+    }
+
+    @media screen and (min-width: 360px) and (max-width: 640px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .domain_heading {
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .valid {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
+<body class="nav_cont">
+    <div class="container">
+        <div class="domain_name">
+            <h3 class="domain_heading">Mk khan</h3>
+        </div>
+        <div class="valid">
+            <a class="anchor" href="/">Home</a>
+            <a class="anchor" href="/secret">Secret</a>
+            <a class="anchor" href="/login">Login</a>
+            <a class="anchor" href="/index">Registration</a>
+        </div>
+    </div>
+</body>
+
+</html>

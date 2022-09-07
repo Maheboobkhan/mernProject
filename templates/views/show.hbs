@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav_cont {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        .container {
+            width: 100%;
+            height: 200px;
+            background: url("/assets/css/mk.png");
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .domain_heading {
+            color: #fff;
+            font-size: 30px;
+            padding-left: 10px;
+        }
+
+        .valid {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 10px;
+        }
+
+        .anchor {
+            color: #fff;
+            margin-left: 15px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: red;
+            font-size: 40px;
+        }
+
+        .para {
+            display: flex;
+            margin-top: 60px;
+        }
+
+        .para1 {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 20px 10px;
+            color: #fff;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .para2 {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 20px 10px;
+            color: #fff;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .para3 {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 20px 10px;
+            color: #fff;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        span {
+            color: greenyellow;
+            text-shadow: 1px 2px red;
+        }
+
+        @media only screen and (max-width: 992px) {
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 25px;
+            }
+
+            .domain_heading {
+                font-size: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 690px) {
+            .container {
+                height: 130px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .valid {
+                padding: 10px;
+            }
+
+            .para {
+                display: flex;
+                flex-direction: column;
+                margin-top: 80px;
+            }
+
+            .para1 {
+                border: 1px solid red;
+                padding: 10px;
+                margin: 10px 10px;
+                color: #fff;
+                background-color: black;
+                border-radius: 10px;
+            }
+
+            .para2 {
+                border: 1px solid red;
+                padding: 10px;
+                margin: 20px 10px;
+                color: #fff;
+                background-color: black;
+                border-radius: 10px;
+            }
+
+            .para3 {
+                border: 1px solid red;
+                padding: 10px;
+                margin: 20px 10px;
+                color: #fff;
+                background-color: black;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_cont">
+        <div class="container">
+            <div class="domain_name">
+                <h3 class="domain_heading">Mk Khan</h3>
+            </div>
+            <div class="heading">
+                <h1>Welcome <span>{{username}}</span></h1>
+            </div>
+            <div class="valid">
+                <a class="anchor" href="/">Home</a>
+                <a class="anchor" href="/login">Login</a>
+                <a class="anchor" href="/logout">Logout</a>
+                <a class="anchor" href="/register">Registration</a>
+            </div>
+        </div>
+
+        <div class="para">
+            <div class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id inventore amet
+                voluptatem dolorem dicta quibusdam ducimus, debitis ea iure tenetur explicabo earum optio soluta sed
+                harum repellendus enim quam sint expedita odio ex nisi? Soluta dolor nobis magni quasi beatae
+                perferendis molestiae possimus enim quae earum? Quae aperiam esse rem, vitae modi illo voluptates nulla
+                sapiente sequi, vero laboriosam.</div>
+
+            <div class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id inventore amet
+                voluptatem dolorem dicta quibusdam ducimus, debitis ea iure tenetur explicabo earum optio soluta sed
+                harum repellendus enim quam sint expedita odio ex nisi? Soluta dolor nobis magni quasi beatae
+                perferendis molestiae possimus enim quae earum? Quae aperiam esse rem, vitae modi illo voluptates nulla
+                sapiente sequi, vero laboriosam.</div>
+
+            <div class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id inventore amet
+                voluptatem dolorem dicta quibusdam ducimus, debitis ea iure tenetur explicabo earum optio soluta sed
+                harum repellendus enim quam sint expedita odio ex nisi? Soluta dolor nobis magni quasi beatae
+                perferendis molestiae possimus enim quae earum? Quae aperiam esse rem, vitae modi illo voluptates nulla
+                sapiente sequi, vero laboriosam.</div>
+        </div>
+    </div>
+</body>
+
+</html>
